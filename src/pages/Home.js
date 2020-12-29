@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-
-class rannsokn extends Component{
+class Home extends Component{
   render(){
     return (
       <div class="App"> 
                 <Container>
-                    <h1> Rannsóknir drasl </h1>
+                    <h1> Home Home </h1>
                 </Container>
       </div>
     );
   }
 }
-export default rannsokn;
+export default Home;
 
 export const Container = styled.div`
     padding: 15px; 

@@ -1,29 +1,14 @@
 import React from 'react';
 import picture from '../../assets/icon/little_icon.png';
 import styled from 'styled-components';
-import { BrowserRouter, Route, Router, Link, Switch } from 'react-router-dom';
-import { Rannsokn } from '../../pages/rannsokn/rannsokn';
+import {Link} from 'react-router-dom';
 
 const Header = () => (
     <HeaderContainer>
         <HeaderBox>
-            <img src={ picture }/>
-            <Router>
-                
+                <Link to="/"> <img src={ picture } alt={picture} /> </Link>
                 <Link to="/rannsokn"> <HeaderFont>Rannsóknir</HeaderFont> </Link>
-                <HeaderFont>Íslenskt Táknmál</HeaderFont>
-                <HeaderFont>Túlkaþjónusta</HeaderFont>
-                <HeaderFont>Ráðgjöf og fræðsla</HeaderFont>
-                <HeaderFont>Samstarf</HeaderFont>
-                <HeaderFont>Um SHH</HeaderFont>
-                
-                <Switch>
-                    <Route path="/rannsokn" component={Rannsokn}>
-                        <Rannsokn />
-                    </Route>
-                </Switch>
-
-            </Router>
+                <Link to="/umShh"> <HeaderFont>Um Shh</HeaderFont> </Link>
         </HeaderBox>
     </HeaderContainer>
 
@@ -46,7 +31,18 @@ export const HeaderBox = styled.div`
 `
 export const HeaderFont = styled.h3`
     font-family: 'Helvetica';
-    font-weight: 500;
+    font-weight: 700;
     font-size: 19px;
+    &.visited{
+        text-decoration: none;  
+    }
+    &:hover { 
+        text-decoration: none;
+    }
 ` 
 
+/*
+<HeaderFont>Íslenskt Táknmál</HeaderFont>
+                <HeaderFont>Túlkaþjónusta</HeaderFont>
+                <HeaderFont>Ráðgjöf og fræðsla</HeaderFont>
+                <HeaderFont>Samstarf</HeaderFont>*/
