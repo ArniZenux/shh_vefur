@@ -40,9 +40,3 @@ export const HeaderFont = styled.h3`
         text-decoration: none;
     }
 ` 
-
-/*
-<HeaderFont>Íslenskt Táknmál</HeaderFont>
-                <HeaderFont>Túlkaþjónusta</HeaderFont>
-                <HeaderFont>Ráðgjöf og fræðsla</HeaderFont>
-                <HeaderFont>Samstarf</HeaderFont>*/

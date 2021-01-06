@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Switch, Route } from "react-router-dom";
+
 import Home from "./pages/Home"; 
 import Rannsokn from  "./pages/rannsokn/rannsokn";
 import UmShh from "./pages/umShh/umshh";
